@@ -22,3 +22,13 @@ model Admin{
   password String
   createdAt DateTime @default(now())
 }
+
+model Product{
+  id        String   @id @default(uuid())
+  name      String
+  price     Float
+  description     String
+  imageUrl     String?         
+  inStock     Boolean?
+  createdAt  DateTime  @default(now())
+}

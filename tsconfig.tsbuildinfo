@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"version":"5.9.3"}
+{"root":["./src/index.ts","./src/controller/auth.controller.ts","./src/generated/browser.ts","./src/generated/client.ts","./src/generated/commoninputtypes.ts","./src/generated/enums.ts","./src/generated/models.ts","./src/generated/internal/class.ts","./src/generated/internal/prismanamespace.ts","./src/generated/internal/prismanamespacebrowser.ts","./src/generated/models/admin.ts","./src/generated/models/user.ts","./src/routes/auth.route.ts"],"version":"5.9.3"}
