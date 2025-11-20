@@ -6,6 +6,7 @@ import {
   removeFromCart,
   updateCartQuantity,
 } from "../controller/cart.controller";
+import { checkoutController } from "../controller/checkout.controller";
 
 const router = Router();
 
@@ -16,6 +17,6 @@ router.post("/update", userAuthMiddleware, updateCartQuantity as any);
 
 // checkout functionality
 
-router.post("/checkout", userAuthMiddleware);
+router.post("/checkout", userAuthMiddleware, checkoutController as any);
 
 export default router;

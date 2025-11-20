@@ -5,6 +5,7 @@ import cors from "cors";
 import authRoutes from "./routes/auth.route";
 import productRoutes from "./routes/product.route";
 import cartRoutes from "./routes/cart.route";
+import discountRoutes from "./routes/discount.route";
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
 app.use("/auth", authRoutes);
 app.use("/product", productRoutes);
 app.use("/cart", cartRoutes);
+app.use("/discount", discountRoutes);
 
 const PORT = process.env.PORT;
 
