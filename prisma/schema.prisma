@@ -14,6 +14,7 @@ model User{
   password  String 
   name      String 
   createdAt   DateTime @default(now())
+  carts       Cart[]
 }
 
 model Admin{
@@ -31,4 +32,27 @@ model Product{
   imageUrl     String?         
   inStock     Boolean?
   createdAt  DateTime  @default(now())
+  cartItems       CartItem[]
+}
+
+model Cart {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+
+  items     CartItem[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CartItem {
+  id        String   @id @default(uuid())
+  cart      Cart     @relation(fields: [cartId], references: [id])
+  cartId    String
+
+  product   Product  @relation(fields: [productId], references: [id])
+  productId String
+
+  quantity  Int
+  createdAt DateTime @default(now())
 }
