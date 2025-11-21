@@ -6,6 +6,7 @@ import authRoutes from "./routes/auth.route";
 import productRoutes from "./routes/product.route";
 import cartRoutes from "./routes/cart.route";
 import discountRoutes from "./routes/discount.route";
+import adminRoutes from "./routes/admin.route";
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.use("/auth", authRoutes);
 app.use("/product", productRoutes);
 app.use("/cart", cartRoutes);
 app.use("/discount", discountRoutes);
+app.use("/admin", adminRoutes);
 
 const PORT = process.env.PORT;
 

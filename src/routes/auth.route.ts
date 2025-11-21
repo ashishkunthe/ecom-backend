@@ -12,6 +12,6 @@ const route = Router();
 route.post("/user-register", RegisterController);
 route.post("/user-login", LoginController);
 route.post("/admin-register", adminAuthMiddleware, AdminRegister);
-route.post("/admin-login", adminAuthMiddleware, AdminLogin);
+route.post("/admin-login", AdminLogin);
 
 export default route;

@@ -20,3 +20,4 @@ route.post("/get-products", userAuthMiddleware, getProducts as any);
 route.post("/get-product/:id", userAuthMiddleware, getProduct as any);
 
 export default route;
+ 
