@@ -30,3 +30,5 @@ const PORT = process.env.PORT;
 app.listen(PORT || 5000, () => {
   console.log("sever is running", PORT);
 });
+
+export default app;
