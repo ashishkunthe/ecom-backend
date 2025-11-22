@@ -131,6 +131,10 @@ npx prisma generate
 npx prisma migrate dev
 ```
 
+## test script
+
+npm run test
+
 ## 4️⃣ Run server
 
 ```
